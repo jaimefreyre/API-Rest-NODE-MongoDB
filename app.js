@@ -4,16 +4,16 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// Endpoint routes configured
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
 var actorsRouter = require('./routes/actors');
 var directorsRouter = require('./routes/directors');
 var peliculasRouter = require('./routes/peliculas');
 var episodiosRouter = require('./routes/episodios');
 var seriesRouter = require('./routes/series');
-
 var authRouter = require('./routes/auth');
+
 const mongoose = require('mongoose');
 
 require('dotenv').config();
@@ -44,6 +44,7 @@ connection.once('open', () =>{
   console.log('Conectado a la BD');
 });
 
+//Endpoint routes are assigned
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
 app.use('/api/users', usersRouter);
