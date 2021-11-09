@@ -9,3 +9,14 @@ Deployment procedure
 
 Warning
 The projects connected to MongoDB Atlas have filters by blacklist ip, so it is recommended to test configure it from .ENV to your own database
+
+INFO
+Each of the entities in the database are assigned the different HTTP verbs, for tasks of registration, modification, filtering and elimination.
+
+/auth (Verbose : GET- POST- PATCH, DELETE)
+/api/users (Verbose : GET- POST- PATCH, DELETE)
+/api/actors' (Verbose : GET- POST- PATCH, DELETE)
+/api/directors (Verbose : GET- POST- PATCH, DELETE)
+/api/peliculas (Verbose : GET- POST- PATCH, DELETE)
+/api/episodios (Verbose : GET- POST- PATCH, DELETE)
+/api/series (Verbose : GET- POST- PATCH, DELETE)
