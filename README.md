@@ -24,3 +24,17 @@ Each of the entities in the database are assigned the different HTTP verbs, for 
 Episodes organized in a Join by season and api series/episodios/episodiosxseriesytemporada
 In the different files of the router folder all endpoints are loaded, organized by entity and function
 
+Register User
+POST /auth/signup
+{
+    "name": "nombre usuario",
+    "password": "password elegido"
+}
+
+Login User
+POST /auth/login
+
+{
+    "name": "nombre usuario",
+    "password": "password elegido"
+}
