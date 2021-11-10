@@ -26,15 +26,23 @@ In the different files of the router folder all endpoints are loaded, organized 
 
 Register User
 POST /auth/signup
+https://app-mongoapi.herokuapp.com/auth/signup
 {
-    "name": "nombre usuario",
+    "username": "nombre usuario",
     "password": "password elegido"
 }
 
 Login User
 POST /auth/login
+https://app-mongoapi.herokuapp.com/auth/login
 
 {
-    "name": "nombre usuario",
+    "username": "nombre usuario",
     "password": "password elegido"
+}
+
+Usuario Registrado
+{
+    "username": "Juaanju",
+    "password": "password2"
 }
